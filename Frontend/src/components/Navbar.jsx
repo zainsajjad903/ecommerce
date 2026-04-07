@@ -1,49 +1,45 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <>
       <div>
         <nav className="navbar navbar-expand-lg bg-white shadow-sm px-4 py-3 navbar-custom">
           <div className="container-fluid px-0">
-            <a className="navbar-brand" href="index.html">
+            <Link className="navbar-brand" to="/">
               <span className="d-flex flex-column text-uppercase text-xs fw-bold lh-sm">
-                <span className="" style="letter-spacing: .12rem;">
-                  Furnish
-                </span>
+                <span style={{ letterSpacing: ".12rem" }}>Furnish</span>
                 <span>Template</span>
               </span>
-            </a>
+            </Link>
 
             <div className="mx-auto  d-lg-block d-none">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a
-                    className="nav-link active"
-                    aria-current="page"
-                    href="index.html"
-                  >
+                  <Link className="nav-link active" aria-current="page" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="about.html">
+                  <Link className="nav-link" to="/about">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="products.html">
+                  <Link className="nav-link" to="/products">
                     Products
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="testimonials.html">
+                  <Link className="nav-link" to="/testimonials">
                     Testimonials
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link " href="contact.html">
+                  <Link className="nav-link" to="/contact">
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -70,7 +66,7 @@ const Navbar = () => {
                   viewBox="0 0 16 16"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
                   />
                 </svg>
