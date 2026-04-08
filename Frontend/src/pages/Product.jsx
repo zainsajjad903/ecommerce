@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 const Product = () => {
   return (
     <>
@@ -381,6 +382,7 @@ const Product = () => {
             </div>
           </div>
         </section>
+        <Footer />
       </main>
     </>
   );

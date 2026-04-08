@@ -4,73 +4,71 @@ const Navbar = () => {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg bg-white shadow-sm px-4 py-3 navbar-custom">
-          <div className="container-fluid px-0">
-            <Link className="navbar-brand" to="/">
-              <span className="d-flex flex-column text-uppercase text-xs fw-bold lh-sm">
-                <span style={{ letterSpacing: ".12rem" }}>Furnish</span>
-                <span>Template</span>
-              </span>
-            </Link>
+        <nav
+          className="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
+          arial-label="Furni navigation bar"
+        >
+          <div className="container">
+            <a className="navbar-brand" href="index.html">
+              Furni<span>.</span>
+            </a>
 
-            <div className="mx-auto  d-lg-block d-none">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/">
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsFurni"
+              aria-controls="navbarsFurni"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+
+            <div className="collapse navbar-collapse" id="navbarsFurni">
+              <ul className="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                <li className="nav-item ">
+                  <a className="nav-link" href="index.html">
                     Home
-                  </Link>
+                  </a>
                 </li>
-                <li className="nav-item">
+                <li className="active">
+                  <a className="nav-link" href="shop.html">
+                    Products
+                  </a>
+                </li>
+                <li>
                   <Link className="nav-link" to="/about">
                     About us
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/products">
-                    Products
+                <li>
+                  <Link className="nav-link" to="/services">
+                    Services
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/testimonials">
-                    Testimonials
+                <li>
+                  <Link className="nav-link" to="/blog">
+                    Blog
                   </Link>
                 </li>
-
-                <li className="nav-item">
+                <li>
                   <Link className="nav-link" to="/contact">
-                    Contact
+                    Contact us
                   </Link>
                 </li>
               </ul>
-            </div>
-            <div className="d-flex align-items-center gap-4">
-              <span className="d-flex align-items-center gap-2 fw-bold">
-                <span>
-                  <i className="bi bi-telephone"></i>
-                </span>
-                <span>+901234576</span>
-              </span>
-              <a
-                className=""
-                data-bs-toggle="offcanvas"
-                href="#offcanvasExample"
-                role="button"
-                aria-controls="offcanvasExample"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  className="bi bi-list"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-                  />
-                </svg>
-              </a>
+
+              <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                <li>
+                  <Link className="nav-link" to="/user" />
+                  <img src="images/user.svg" />
+                </li>
+                <li>
+                  <Link className="nav-link" to="/cart" />
+                  <img src="images/cart.svg" />
+                </li>
+              </ul>
             </div>
           </div>
         </nav>

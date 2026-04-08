@@ -6,6 +6,8 @@ import About from "./pages/About.jsx";
 import Products from "./pages/Product.jsx";
 import Testimonials from "./pages/Testimonials.jsx";
 import Contact from "./pages/Contact.jsx";
+import Footer from "./components/Footer.jsx";
+
 const App = () => {
   return (
     <Router>
@@ -17,6 +19,7 @@ const App = () => {
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
