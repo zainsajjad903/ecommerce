@@ -1,4 +1,47 @@
+import React, { useEffect, useRef } from "react";
+
 const Testimonials = () => {
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    let inst = sliderRef.current;
+
+    const init = () => {
+      if (typeof window !== "undefined" && window.tns && !inst) {
+        try {
+          inst = window.tns({
+            container: ".testimonial-slider",
+            items: 1,
+            axis: "horizontal",
+            controlsContainer: "#testimonial-nav",
+            swipeAngle: false,
+            speed: 700,
+            nav: true,
+            controls: true,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayTimeout: 3500,
+            autoplayButtonOutput: false,
+          });
+          sliderRef.current = inst;
+        } catch (e) {
+          console.error("tiny-slider init failed", e);
+        }
+      }
+    };
+
+    init();
+    const timer = setTimeout(init, 300);
+    window.addEventListener("load", init);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("load", init);
+      if (inst && typeof inst.destroy === "function") inst.destroy();
+      sliderRef.current = null;
+    };
+  }, []);
+
   return (
     <>
       <div className="testimonial-section before-footer-section">
