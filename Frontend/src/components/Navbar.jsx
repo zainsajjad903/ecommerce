@@ -9,9 +9,9 @@ const Navbar = () => {
           arial-label="Furni navigation bar"
         >
           <div className="container">
-            <a className="navbar-brand" href="index.html">
+            <Link className="navbar-brand" to="/">
               Furni<span>.</span>
-            </a>
+            </Link>
 
             <button
               className="navbar-toggler"
@@ -28,14 +28,14 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarsFurni">
               <ul className="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
                 <li className="nav-item ">
-                  <a className="nav-link" href="index.html">
+                  <Link className="nav-link" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="active">
-                  <a className="nav-link" href="shop.html">
+                  <Link className="nav-link" to="/products">
                     Products
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link className="nav-link" to="/about">
@@ -62,11 +62,11 @@ const Navbar = () => {
               <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
                 <li>
                   <Link className="nav-link" to="/user" />
-                  <img src="images/user.svg" />
+                  <img src="/images/user.svg" />
                 </li>
                 <li>
                   <Link className="nav-link" to="/cart" />
-                  <img src="images/cart.svg" />
+                  <img src="/images/cart.svg" />
                 </li>
               </ul>
             </div>

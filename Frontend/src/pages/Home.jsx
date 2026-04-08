@@ -1,339 +1,408 @@
-import React from "react";
+import Testimonials from "../components/Testinomial";
 
 const Home = () => {
   return (
     <>
-      <main>
-        <div className="py-lg-8 pt-6">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-xxl-8 col-12 ">
-                <div
-                  className="swiper-container swiper swiper-pagination-light "
-                  id="swiper-6"
-                  data-pagination-type=""
-                  data-speed="800"
-                  data-space-between="100"
-                  data-pagination="true"
-                  data-navigation="true"
-                  data-autoplay="true"
-                  data-effect="slide"
-                  data-autoplay-delay="3000"
-                  data-breakpoints='{"480": {"slidesPerView": 2}, "768": {"slidesPerView": 1}, "1024": {"slidesPerView": 1}}'
-                >
-                  <div className="swiper-wrapper">
-                    <div className="swiper-slide px-md-8 ">
-                      <div className="position-relative text-center">
-                        <img
-                          src="./assets/images/slider/slider-img-2.png"
-                          alt=""
-                          className="img-fluid my-5 my-lg-0"
-                        />
-                        <div className="text-center position-absolute top-0 start-0 px-lg-11   ">
-                          <h1 className="fs-1 fst-italic text-secondary">
-                            %20 Sell
-                          </h1>
-                          <h2 className="display-4 lh-1">
-                            Comfy Sofa Home-Office
-                          </h2>
-                        </div>
-                        <div className="position-absolute top-md-65 top-75 start-50 translate-middle-x mt-lg-9 ">
-                          <p className="d-none d-lg-block">
-                            Comfortable and stylish sofa for your home office.
-                          </p>
-                          <div className="fw-bold mb-4 d-none d-lg-block">
-                            $50
-                          </div>
-                          <a href="#" className="btn btn-primary">
-                            View Details
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+      <div className="hero">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-5">
+              <div className="intro-excerpt">
+                <h1>
+                  Modern Interior <span clsas="d-block">Design Studio</span>
+                </h1>
+                <p className="mb-4">
+                  Donec vitae odio quis nisl dapibus malesuada. Nullam ac
+                  aliquet velit. Aliquam vulputate velit imperdiet dolor tempor
+                  tristique.
+                </p>
+                <p>
+                  <a href="" className="btn btn-secondary me-2">
+                    Shop Now
+                  </a>
+                  <a href="#" className="btn btn-white-outline">
+                    Explore
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-7">
+              <div className="hero-img-wrap">
+                <img src="/images/couch.png" className="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                    <div className="swiper-slide px-md-8 ">
-                      <div className="position-relative text-center">
-                        <img
-                          src="./assets/images/slider/slider-img-1.png"
-                          alt=""
-                          className="img-fluid my-5 my-lg-0"
-                        />
-                        <div className="text-center position-absolute top-0 start-0 px-lg-11   ">
-                          <h1 className="fs-1 fst-italic text-secondary">
-                            %10 Sell
-                          </h1>
-                          <h2 className="display-4 lh-1">
-                            Exchange your old furniture
-                          </h2>
-                        </div>
-                        <div className="position-absolute top-md-65 top-75 start-50 translate-middle-x mt-lg-9 ">
-                          <p className="d-none d-lg-block">
-                            Save up to $50 for your home office.
-                          </p>
-                          <div className="fw-bold mb-4 d-none d-lg-block">
-                            $45
-                          </div>
-                          <a href="#" className="btn btn-primary">
-                            View Details
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+      <div className="product-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 col-lg-3 mb-5 mb-lg-0">
+              <h2 className="mb-4 section-title">
+                Crafted with excellent material.
+              </h2>
+              <p className="mb-4">
+                Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
+                velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+              </p>
+              <p>
+                <a href="shop.html" className="btn">
+                  Explore
+                </a>
+              </p>
+            </div>
 
-                    <div className="swiper-slide px-md-8 ">
-                      <div className="position-relative text-center">
-                        <img
-                          src="./assets/images/slider/slider-img-3.png"
-                          alt=""
-                          className="img-fluid my-5 my-lg-0"
-                        />
-                        <div className="text-center position-absolute top-0 start-0 px-lg-11   ">
-                          <h1 className="fs-1 fst-italic text-secondary">
-                            %25 Sell
-                          </h1>
-                          <h2 className="display-4 lh-1">
-                            Crafted royal comfort sofa
-                          </h2>
-                        </div>
-                        <div className="position-absolute top-md-65 top-75 start-50 translate-middle-x mt-lg-9 ">
-                          <p className="d-none d-lg-block">
-                            Experience the elegance of timeless craftsmanship
-                            with our Sofa.{" "}
-                          </p>
-                          <div className="fw-bold mb-4 d-none d-lg-block">
-                            $89
-                          </div>
-                          <a href="#" className="btn btn-primary">
-                            View Details
-                          </a>
-                        </div>
-                      </div>
+            <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+              <a className="product-item" href="cart.html">
+                <img
+                  src="/images/product-1.png"
+                  className="img-fluid product-thumbnail"
+                />
+                <h3 className="product-title">Nordic Chair</h3>
+                <strong className="product-price">$50.00</strong>
+
+                <span className="icon-cross">
+                  <img src="/images/cross.svg" className="img-fluid" />
+                </span>
+              </a>
+            </div>
+
+            <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+              <a className="product-item" href="cart.html">
+                <img
+                  src="/images/product-2.png"
+                  className="img-fluid product-thumbnail"
+                />
+                <h3 className="product-title">Kruzo Aero Chair</h3>
+                <strong className="product-price">$78.00</strong>
+
+                <span className="icon-cross">
+                  <img src="/images/cross.svg" className="img-fluid" />
+                </span>
+              </a>
+            </div>
+
+            <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+              <a className="product-item" href="cart.html">
+                <img
+                  src="/images/product-3.png"
+                  className="img-fluid product-thumbnail"
+                />
+                <h3 className="product-title">Ergonomic Chair</h3>
+                <strong className="product-price">$43.00</strong>
+
+                <span className="icon-cross">
+                  <img src="/images/cross.svg" className="img-fluid" />
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="why-choose-section">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-6">
+              <h2 className="section-title">Why Choose Us</h2>
+              <p>
+                Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
+                velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
+              </p>
+
+              <div className="row my-5">
+                <div className="col-6 col-md-6">
+                  <div className="feature">
+                    <div className="icon">
+                      <img
+                        src="/images/truck.svg"
+                        alt="Image"
+                        className="imf-fluid"
+                      />
                     </div>
+                    <h3>Fast &amp; Free Shipping</h3>
+                    <p>
+                      Donec vitae odio quis nisl dapibus malesuada. Nullam ac
+                      aliquet velit. Aliquam vulputate.
+                    </p>
                   </div>
+                </div>
 
-                  <div className="swiper-pagination mb-3 "></div>
+                <div className="col-6 col-md-6">
+                  <div className="feature">
+                    <div className="icon">
+                      <img
+                        src="/images/bag.svg"
+                        alt="Image"
+                        className="imf-fluid"
+                      />
+                    </div>
+                    <h3>Easy to Shop</h3>
+                    <p>
+                      Donec vitae odio quis nisl dapibus malesuada. Nullam ac
+                      aliquet velit. Aliquam vulputate.
+                    </p>
+                  </div>
+                </div>
 
-                  <div className="swiper-navigation mb-4">
-                    <div className="swiper-button-prev"></div>
-                    <div className="swiper-button-next"></div>
+                <div className="col-6 col-md-6">
+                  <div className="feature">
+                    <div className="icon">
+                      <img
+                        src="/images/support.svg"
+                        alt="Image"
+                        className="imf-fluid"
+                      />
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>
+                      Donec vitae odio quis nisl dapibus malesuada. Nullam ac
+                      aliquet velit. Aliquam vulputate.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-6 col-md-6">
+                  <div className="feature">
+                    <div className="icon">
+                      <img
+                        src="/images/return.svg"
+                        alt="Image"
+                        className="imf-fluid"
+                      />
+                    </div>
+                    <h3>Hassle Free Returns</h3>
+                    <p>
+                      Donec vitae odio quis nisl dapibus malesuada. Nullam ac
+                      aliquet velit. Aliquam vulputate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-5">
+              <div className="img-wrap">
+                <img
+                  src="/images/why-choose-us-img.jpg"
+                  alt="Image"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="we-help-section">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-7 mb-5 mb-lg-0">
+              <div className="imgs-grid">
+                <div className="grid grid-1">
+                  <img src="/images/img-grid-1.jpg" alt="Untree.co" />
+                </div>
+                <div className="grid grid-2">
+                  <img src="/images/img-grid-2.jpg" alt="Untree.co" />
+                </div>
+                <div className="grid grid-3">
+                  <img src="/images/img-grid-3.jpg" alt="Untree.co" />
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-5 ps-lg-5">
+              <h2 className="section-title mb-4">
+                We Help You Make Modern Interior Design
+              </h2>
+              <p>
+                Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
+                quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                vulputate velit imperdiet dolor tempor tristique. Pellentesque
+                habitant morbi tristique senectus et netus et malesuada
+              </p>
+
+              <ul className="list-unstyled custom-list my-4">
+                <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                <li>Donec vitae odio quis nisl dapibus malesuada</li>
+              </ul>
+              <p>
+                <a herf="#" className="btn">
+                  Explore
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="popular-product">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div className="product-item-sm d-flex">
+                <div className="thumbnail">
+                  <img
+                    src="/images/product-1.png"
+                    alt="Image"
+                    className="img-fluid"
+                  />
+                </div>
+                <div className="pt-3">
+                  <h3>Nordic Chair</h3>
+                  <p>
+                    Donec facilisis quam ut purus rutrum lobortis. Donec vitae
+                    odio
+                  </p>
+                  <p>
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div className="product-item-sm d-flex">
+                <div className="thumbnail">
+                  <img
+                    src="/images/product-2.png"
+                    alt="Image"
+                    className="img-fluid"
+                  />
+                </div>
+                <div className="pt-3">
+                  <h3>Kruzo Aero Chair</h3>
+                  <p>
+                    Donec facilisis quam ut purus rutrum lobortis. Donec vitae
+                    odio
+                  </p>
+                  <p>
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div className="product-item-sm d-flex">
+                <div className="thumbnail">
+                  <img
+                    src="/images/product-3.png"
+                    alt="Image"
+                    className="img-fluid"
+                  />
+                </div>
+                <div className="pt-3">
+                  <h3>Ergonomic Chair</h3>
+                  <p>
+                    Donec facilisis quam ut purus rutrum lobortis. Donec vitae
+                    odio
+                  </p>
+                  <p>
+                    <a href="#">Read More</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Testimonials />
+
+      <div className="blog-section">
+        <div className="container">
+          <div className="row mb-5">
+            <div className="col-md-6">
+              <h2 className="section-title">Recent Blog</h2>
+            </div>
+            <div className="col-md-6 text-start text-md-end">
+              <a href="#" className="more">
+                View All Posts
+              </a>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+              <div className="post-entry">
+                <a href="#" className="post-thumbnail">
+                  <img
+                    src="/images/post-1.jpg"
+                    alt="Image"
+                    className="img-fluid"
+                  />
+                </a>
+                <div className="post-content-entry">
+                  <h3>
+                    <a href="#">First Time Home Owner Ideas</a>
+                  </h3>
+                  <div className="meta">
+                    <span>
+                      by <a href="#">Kristin Watson</a>
+                    </span>
+                    <span>
+                      on <a href="#">Dec 19, 2021</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+              <div className="post-entry">
+                <a href="#" className="post-thumbnail">
+                  <img
+                    src="/images/post-2.jpg"
+                    alt="Image"
+                    className="img-fluid"
+                  />
+                </a>
+                <div className="post-content-entry">
+                  <h3>
+                    <a href="#">How To Keep Your Furniture Clean</a>
+                  </h3>
+                  <div className="meta">
+                    <span>
+                      by <a href="#">Robert Fox</a>
+                    </span>
+                    <span>
+                      on <a href="#">Dec 15, 2021</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
+              <div className="post-entry">
+                <a href="#" className="post-thumbnail">
+                  <img
+                    src="/images/post-3.jpg"
+                    alt="Image"
+                    className="img-fluid"
+                  />
+                </a>
+                <div className="post-content-entry">
+                  <h3>
+                    <a href="#">Small Space Furniture Apartment Ideas</a>
+                  </h3>
+                  <div className="meta">
+                    <span>
+                      by <a href="#">Kristin Watson</a>
+                    </span>
+                    <span>
+                      on <a href="#">Dec 12, 2021</a>
+                    </span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <section className="py-lg-10 mx-3 mx-lg-0 bg-white">
-          <div className="container">
-            <div className="row mb-md-8 mb-4">
-              <div className="col-lg-12 mb-8">
-                <div className="d-flex flex-column flex-md-row align-items-md-end justify-content-md-between gap-4">
-                  <div className="col-sm-5">
-                    <h2 className="display-4">Our Favoiurte Collection</h2>
-                    <p className="mb-0 lead">
-                      We are inspired by the realities of life today, in which
-                      traditional divides between personal and professional
-                      space are more fluid.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-12">
-                <div
-                  className="swiper-container swiper"
-                  id="swiper-3"
-                  data-pagination-type="bullets"
-                  data-speed="400"
-                  data-space-between="30"
-                  data-pagination="true"
-                  data-navigation="false"
-                  data-autoplay="false"
-                  data-effect="slides"
-                  data-autoplay-delay="3000"
-                  data-breakpoints='{"480": {"slidesPerView": 2}, "768": {"slidesPerView": 3}, "1024": {"slidesPerView": 3}}'
-                >
-                  <div className="swiper-wrapper pb-10">
-                    <div className="swiper-slide">
-                      <div>
-                        <a href="#">
-                          <img
-                            src="./assets/images/product-img-1.jpg"
-                            alt=""
-                            className="img-fluid"
-                          />
-                        </a>
-                        <div className="text-center">
-                          <h3 className="mt-3 h5">
-                            <a href="#">Modern Chair</a>
-                          </h3>
-                          <div className="">
-                            <span className="fw-semibold text-decoration-line-through">
-                              $59.00
-                            </span>
-                            <span className="">$29.00</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div>
-                        <a href="#">
-                          <img
-                            src="./assets/images/product-img-2.jpg"
-                            alt=""
-                            className="img-fluid"
-                          />
-                        </a>
-                        <div className="text-center">
-                          <h3 className="mt-3 h5">
-                            <a href="#">Floor Lamp</a>
-                          </h3>
-                          <div className="">
-                            <span className="fw-semibold text-decoration-line-through">
-                              $95.00
-                            </span>
-                            <span className="">$89.00</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div>
-                        <a href="#">
-                          <img
-                            src="./assets/images/product-img-5.jpg"
-                            alt=""
-                            className="img-fluid"
-                          />
-                        </a>
-                        <div className="text-center">
-                          <h3 className="mt-3 h5">
-                            <a href="#">High Back Boss Chair</a>
-                          </h3>
-                          <div className="">
-                            <span className="fw-semibold text-decoration-line-through">
-                              $78.00
-                            </span>
-                            <span className="">$68.00</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div>
-                        <a href="#">
-                          <img
-                            src="./assets/images/product-img-6.jpg"
-                            alt=""
-                            className="img-fluid"
-                          />
-                        </a>
-                        <div className="text-center">
-                          <h3 className="mt-3 h5">
-                            <a href="#">Fancy Metal Clock</a>
-                          </h3>
-                          <div className="">
-                            <span className="fw-semibold text-decoration-line-through">
-                              $58.00
-                            </span>
-                            <span className="">$38.00</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div>
-                        <a href="#">
-                          <img
-                            src="./assets/images/product-img-3.jpg"
-                            alt=""
-                            className="img-fluid"
-                          />
-                        </a>
-                        <div className="text-center">
-                          <h3 className="mt-3 h5">
-                            <a href="#">Comfort Chair</a>
-                          </h3>
-                          <div className="">
-                            <span className="fw-semibold text-decoration-line-through">
-                              $38.00
-                            </span>
-                            <span className="">$28.00</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="swiper-pagination mb-3"></div>
-
-                  <div className="swiper-navigation position-absolute start-50 translate-middle-x bottom-0 mb-4 d-none d-lg-block">
-                    <div className="swiper-button-prev " id="slide1"></div>
-                    <div className="swiper-button-next" id="slide2"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          style={{
-            backgroundImage:
-              "url(./assets/images/couch-with-cushions-glass-table.jpg)",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          className="py-lg-11 py-6"
-        >
-          <div className="container">
-            <div className="row justify-content-center align-items-center">
-              <div className="col-lg-8">
-                <div className="card border-0 shadow-lg rounded-0">
-                  <div className="card-body p-6">
-                    <div className="text-center">
-                      <p className="fst-italic ">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex
-                        ea commodo consequat. cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum."
-                      </p>
-                      <div className="lh-1">
-                        <h4 className="fs-5 mb-1">John Deo</h4>
-                        <small className="text-sm">CEO, Company Name</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="py-lg-10 py-5">
-          <div className="container ">
-            <div className="row justify-content-center mx-lg-10">
-              <div className="col-lg-8 text-center">
-                <h2 className=" mb-5">Subscribe to our Newsletter</h2>
-
-                <form className="d-flex justify-content-center gap-2 flex-column flex-sm-row">
-                  <input
-                    type="email"
-                    className="form-control w-lg-50 w-100"
-                    placeholder="Enter your email"
-                    required
-                  />
-                  <button type="submit" className="btn btn-primary">
-                    Subscribe
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+      </div>
     </>
   );
 };
