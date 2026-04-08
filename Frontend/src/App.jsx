@@ -6,6 +6,9 @@ import About from "./pages/About.jsx";
 import Products from "./pages/Product.jsx";
 import Blog from "./pages/Blog.jsx";
 import Contact from "./pages/Contact.jsx";
+import Cart from "./pages/Cart.jsx";
+import Checkout from "./pages/Checkout.jsx";
+import Thankyou from "./pages/Thankyou.jsx";
 import Footer from "./components/Footer.jsx";
 import Services from "./pages/Services.jsx";
 
@@ -17,6 +20,9 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/thankyou" element={<Thankyou />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />

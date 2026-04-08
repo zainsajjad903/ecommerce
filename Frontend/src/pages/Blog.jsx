@@ -27,7 +27,7 @@ const Blog = () => {
             </div>
             <div className="col-lg-7">
               <div className="hero-img-wrap">
-                <img src="images/couch.png" className="img-fluid" />
+                <img src="/images/couch.png" className="img-fluid" />
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ const Blog = () => {
               <div className="post-entry">
                 <a href="#" className="post-thumbnail">
                   <img
-                    src="images/post-1.jpg"
+                    src="/images/post-1.jpg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -66,7 +66,7 @@ const Blog = () => {
               <div className="post-entry">
                 <a href="#" className="post-thumbnail">
                   <img
-                    src="images/post-2.jpg"
+                    src="/images/post-2.jpg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -91,7 +91,7 @@ const Blog = () => {
               <div className="post-entry">
                 <a href="#" className="post-thumbnail">
                   <img
-                    src="images/post-3.jpg"
+                    src="/images/post-3.jpg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -116,7 +116,7 @@ const Blog = () => {
               <div className="post-entry">
                 <a href="#" className="post-thumbnail">
                   <img
-                    src="images/post-1.jpg"
+                    src="/images/post-1.jpg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -141,7 +141,7 @@ const Blog = () => {
               <div className="post-entry">
                 <a href="#" className="post-thumbnail">
                   <img
-                    src="images/post-2.jpg"
+                    src="/images/post-2.jpg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -166,7 +166,7 @@ const Blog = () => {
               <div className="post-entry">
                 <a href="#" className="post-thumbnail">
                   <img
-                    src="images/post-3.jpg"
+                    src="/images/post-3.jpg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -191,7 +191,7 @@ const Blog = () => {
               <div className="post-entry">
                 <a href="#" className="post-thumbnail">
                   <img
-                    src="images/post-1.jpg"
+                    src="/images/post-1.jpg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -216,7 +216,7 @@ const Blog = () => {
               <div className="post-entry">
                 <a href="#" className="post-thumbnail">
                   <img
-                    src="images/post-2.jpg"
+                    src="/images/post-2.jpg"
                     alt="Image"
                     className="img-fluid"
                   />
@@ -241,7 +241,7 @@ const Blog = () => {
               <div className="post-entry">
                 <a href="#" className="post-thumbnail">
                   <img
-                    src="images/post-3.jpg"
+                    src="/images/post-3.jpg"
                     alt="Image"
                     className="img-fluid"
                   />

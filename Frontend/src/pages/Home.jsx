@@ -9,7 +9,7 @@ const Home = () => {
             <div className="col-lg-5">
               <div className="intro-excerpt">
                 <h1>
-                  Modern Interior <span clsas="d-block">Design Studio</span>
+                  Modern Interior <span className="d-block">Design Studio</span>
                 </h1>
                 <p className="mb-4">
                   Donec vitae odio quis nisl dapibus malesuada. Nullam ac
@@ -54,7 +54,7 @@ const Home = () => {
             </div>
 
             <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-              <a className="product-item" href="cart.html">
+              <a className="product-item" href="/cart">
                 <img
                   src="/images/product-1.png"
                   className="img-fluid product-thumbnail"
@@ -69,7 +69,7 @@ const Home = () => {
             </div>
 
             <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-              <a className="product-item" href="cart.html">
+              <a className="product-item" href="/cart">
                 <img
                   src="/images/product-2.png"
                   className="img-fluid product-thumbnail"
@@ -84,7 +84,7 @@ const Home = () => {
             </div>
 
             <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-              <a className="product-item" href="cart.html">
+              <a className="product-item" href="/cart">
                 <img
                   src="/images/product-3.png"
                   className="img-fluid product-thumbnail"
@@ -118,7 +118,7 @@ const Home = () => {
                       <img
                         src="/images/truck.svg"
                         alt="Image"
-                        className="imf-fluid"
+                        className="img-fluid"
                       />
                     </div>
                     <h3>Fast &amp; Free Shipping</h3>
@@ -135,7 +135,7 @@ const Home = () => {
                       <img
                         src="/images/bag.svg"
                         alt="Image"
-                        className="imf-fluid"
+                        className="img-fluid"
                       />
                     </div>
                     <h3>Easy to Shop</h3>
@@ -152,7 +152,7 @@ const Home = () => {
                       <img
                         src="/images/support.svg"
                         alt="Image"
-                        className="imf-fluid"
+                        className="img-fluid"
                       />
                     </div>
                     <h3>24/7 Support</h3>
@@ -169,7 +169,7 @@ const Home = () => {
                       <img
                         src="/images/return.svg"
                         alt="Image"
-                        className="imf-fluid"
+                        className="img-fluid"
                       />
                     </div>
                     <h3>Hassle Free Returns</h3>
@@ -229,7 +229,7 @@ const Home = () => {
                 <li>Donec vitae odio quis nisl dapibus malesuada</li>
               </ul>
               <p>
-                <a herf="#" className="btn">
+                <a href="#" className="btn">
                   Explore
                 </a>
               </p>

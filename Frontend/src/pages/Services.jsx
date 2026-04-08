@@ -24,7 +24,7 @@ const Services = () => {
             </div>
             <div className="col-lg-7">
               <div className="hero-img-wrap">
-                <img src="images/couch.png" className="img-fluid" />
+                <img src="/images/couch.png" className="img-fluid" />
               </div>
             </div>
           </div>
@@ -38,9 +38,9 @@ const Services = () => {
               <div className="feature">
                 <div className="icon">
                   <img
-                    src="images/truck.svg"
+                    src="/images/truck.svg"
                     alt="Image"
-                    className="imf-fluid"
+                    className="img-fluid"
                   />
                 </div>
                 <h3>Fast &amp; Free Shipping</h3>
@@ -54,7 +54,11 @@ const Services = () => {
             <div className="col-6 col-md-6 col-lg-3 mb-4">
               <div className="feature">
                 <div className="icon">
-                  <img src="images/bag.svg" alt="Image" className="imf-fluid" />
+                  <img
+                    src="/images/bag.svg"
+                    alt="Image"
+                    className="img-fluid"
+                  />
                 </div>
                 <h3>Easy to Shop</h3>
                 <p>
@@ -68,9 +72,9 @@ const Services = () => {
               <div className="feature">
                 <div className="icon">
                   <img
-                    src="images/support.svg"
+                    src="/images/support.svg"
                     alt="Image"
-                    className="imf-fluid"
+                    className="img-fluid"
                   />
                 </div>
                 <h3>24/7 Support</h3>
@@ -85,9 +89,9 @@ const Services = () => {
               <div className="feature">
                 <div className="icon">
                   <img
-                    src="images/return.svg"
+                    src="/images/return.svg"
                     alt="Image"
-                    className="imf-fluid"
+                    className="img-fluid"
                   />
                 </div>
                 <h3>Hassle Free Returns</h3>
@@ -102,9 +106,9 @@ const Services = () => {
               <div className="feature">
                 <div className="icon">
                   <img
-                    src="images/truck.svg"
+                    src="/images/truck.svg"
                     alt="Image"
-                    className="imf-fluid"
+                    className="img-fluid"
                   />
                 </div>
                 <h3>Fast &amp; Free Shipping</h3>
@@ -118,7 +122,11 @@ const Services = () => {
             <div className="col-6 col-md-6 col-lg-3 mb-4">
               <div className="feature">
                 <div className="icon">
-                  <img src="images/bag.svg" alt="Image" className="imf-fluid" />
+                  <img
+                    src="/images/bag.svg"
+                    alt="Image"
+                    className="img-fluid"
+                  />
                 </div>
                 <h3>Easy to Shop</h3>
                 <p>
@@ -132,9 +140,9 @@ const Services = () => {
               <div className="feature">
                 <div className="icon">
                   <img
-                    src="images/support.svg"
+                    src="/images/support.svg"
                     alt="Image"
-                    className="imf-fluid"
+                    className="img-fluid"
                   />
                 </div>
                 <h3>24/7 Support</h3>
@@ -149,9 +157,9 @@ const Services = () => {
               <div className="feature">
                 <div className="icon">
                   <img
-                    src="images/return.svg"
+                    src="/images/return.svg"
                     alt="Image"
-                    className="imf-fluid"
+                    className="img-fluid"
                   />
                 </div>
                 <h3>Hassle Free Returns</h3>
@@ -187,14 +195,14 @@ const Services = () => {
             <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
               <a className="product-item" href="#">
                 <img
-                  src="images/product-1.png"
+                  src="/images/product-1.png"
                   className="img-fluid product-thumbnail"
                 />
                 <h3 className="product-title">Nordic Chair</h3>
                 <strong className="product-price">$50.00</strong>
 
                 <span className="icon-cross">
-                  <img src="images/cross.svg" className="img-fluid" />
+                  <img src="/images/cross.svg" className="img-fluid" />
                 </span>
               </a>
             </div>
@@ -202,14 +210,14 @@ const Services = () => {
             <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
               <a className="product-item" href="#">
                 <img
-                  src="images/product-2.png"
+                  src="/images/product-2.png"
                   className="img-fluid product-thumbnail"
                 />
                 <h3 className="product-title">Kruzo Aero Chair</h3>
                 <strong className="product-price">$78.00</strong>
 
                 <span className="icon-cross">
-                  <img src="images/cross.svg" className="img-fluid" />
+                  <img src="/images/cross.svg" className="img-fluid" />
                 </span>
               </a>
             </div>
@@ -217,14 +225,14 @@ const Services = () => {
             <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
               <a className="product-item" href="#">
                 <img
-                  src="images/product-3.png"
+                  src="/images/product-3.png"
                   className="img-fluid product-thumbnail"
                 />
                 <h3 className="product-title">Ergonomic Chair</h3>
                 <strong className="product-price">$43.00</strong>
 
                 <span className="icon-cross">
-                  <img src="images/cross.svg" className="img-fluid" />
+                  <img src="/images/cross.svg" className="img-fluid" />
                 </span>
               </a>
             </div>

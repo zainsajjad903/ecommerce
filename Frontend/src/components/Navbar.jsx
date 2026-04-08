@@ -6,7 +6,7 @@ const Navbar = () => {
       <div>
         <nav
           className="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
-          arial-label="Furni navigation bar"
+          aria-label="Furni navigation bar"
         >
           <div className="container">
             <Link className="navbar-brand" to="/">
@@ -61,12 +61,14 @@ const Navbar = () => {
 
               <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
                 <li>
-                  <Link className="nav-link" to="/user" />
-                  <img src="/images/user.svg" />
+                  <Link className="nav-link" to="/user">
+                    <img src="/images/user.svg" alt="User" />
+                  </Link>
                 </li>
                 <li>
-                  <Link className="nav-link" to="/cart" />
-                  <img src="/images/cart.svg" />
+                  <Link className="nav-link" to="/cart">
+                    <img src="/images/cart.svg" alt="Cart" />
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -34,7 +34,7 @@ const Cart = () => {
                     <tr>
                       <td className="product-thumbnail">
                         <img
-                          src="images/product-1.png"
+                          src="/images/product-1.png"
                           alt="Image"
                           className="img-fluid"
                         />
@@ -46,7 +46,7 @@ const Cart = () => {
                       <td>
                         <div
                           className="input-group mb-3 d-flex align-items-center quantity-container"
-                          style="max-width: 120px;"
+                          style={{ maxWidth: "120px" }}
                         >
                           <div className="input-group-prepend">
                             <button
@@ -59,7 +59,7 @@ const Cart = () => {
                           <input
                             type="text"
                             className="form-control text-center quantity-amount"
-                            value="1"
+                            defaultValue="1"
                             placeholder=""
                             aria-label="Example text with button addon"
                             aria-describedby="button-addon1"
@@ -85,7 +85,7 @@ const Cart = () => {
                     <tr>
                       <td className="product-thumbnail">
                         <img
-                          src="images/product-2.png"
+                          src="/images/product-2.png"
                           alt="Image"
                           className="img-fluid"
                         />
@@ -97,7 +97,7 @@ const Cart = () => {
                       <td>
                         <div
                           className="input-group mb-3 d-flex align-items-center quantity-container"
-                          style="max-width: 120px;"
+                          style={{ maxWidth: "120px" }}
                         >
                           <div className="input-group-prepend">
                             <button
@@ -110,7 +110,7 @@ const Cart = () => {
                           <input
                             type="text"
                             className="form-control text-center quantity-amount"
-                            value="1"
+                            defaultValue="1"
                             placeholder=""
                             aria-label="Example text with button addon"
                             aria-describedby="button-addon1"
@@ -154,7 +154,7 @@ const Cart = () => {
               </div>
               <div className="row">
                 <div className="col-md-12">
-                  <label className="text-black h4" for="coupon">
+                  <label className="text-black h4" htmlFor="coupon">
                     Coupon
                   </label>
                   <p>Enter your coupon code if you have one.</p>
@@ -203,7 +203,7 @@ const Cart = () => {
                     <div className="col-md-12">
                       <button
                         className="btn btn-black btn-lg py-3 btn-block"
-                        onclick="window.location='checkout.html'"
+                        onClick={() => (window.location = "/checkout")}
                       >
                         Proceed To Checkout
                       </button>

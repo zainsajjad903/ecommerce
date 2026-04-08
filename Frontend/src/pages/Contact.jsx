@@ -24,7 +24,7 @@ const Contact = () => {
             </div>
             <div className="col-lg-7">
               <div className="hero-img-wrap">
-                <img src="images/couch.png" className="img-fluid" />
+                <img src="/images/couch.png" className="img-fluid" />
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ const Contact = () => {
                   <div className="row">
                     <div className="col-6">
                       <div className="form-group">
-                        <label className="text-black" for="fname">
+                        <label className="text-black" htmlFor="fname">
                           First name
                         </label>
                         <input
@@ -129,7 +129,7 @@ const Contact = () => {
                     </div>
                     <div className="col-6">
                       <div className="form-group">
-                        <label className="text-black" for="lname">
+                        <label className="text-black" htmlFor="lname">
                           Last name
                         </label>
                         <input
@@ -141,14 +141,14 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label className="text-black" for="email">
+                    <label className="text-black" htmlFor="email">
                       Email address
                     </label>
                     <input type="email" className="form-control" id="email" />
                   </div>
 
                   <div className="form-group mb-5">
-                    <label className="text-black" for="message">
+                    <label className="text-black" htmlFor="message">
                       Message
                     </label>
                     <textarea
