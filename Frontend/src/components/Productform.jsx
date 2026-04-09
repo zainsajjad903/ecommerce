@@ -1,23 +1,23 @@
 import { useState } from "react";
-import { createProduct } from "../Api/apiProduct";
-createProduct();
+import { createProduct } from "../Api/apiProduct.js";
+
 const Productform = () => {
   let [value, updateValue] = useState({
-    productName: "",
-    productPrice: "",
+    Productname: "",
+    Productprice: "",
   });
   function getProductName(event) {
-    updateValue({ ...value, productName: event.target.value });
+    updateValue((prev) => ({ ...prev, Productname: event.target.value }));
   }
   function getProductPrice(event) {
-    updateValue({ ...value, productPrice: event.target.value });
+    updateValue((prev) => ({ ...prev, Productprice: event.target.value }));
   }
   function handlesubmission(event) {
     event.preventDefault();
     createProduct(value);
     updateValue({
-      productName: "",
-      productPrice: "",
+      Productname: "",
+      Productprice: "",
     });
   }
   return (
@@ -36,7 +36,7 @@ const Productform = () => {
                   type="text"
                   className="form-control"
                   id="productName"
-                  value={value.productName}
+                  value={value.Productname}
                   onChange={getProductName}
                 />
               </div>
@@ -49,7 +49,7 @@ const Productform = () => {
                   type="text"
                   className="form-control"
                   id="productPrice"
-                  value={value.productPrice}
+                  value={value.Productprice}
                   onChange={getProductPrice}
                 />
               </div>
