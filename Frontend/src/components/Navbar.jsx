@@ -70,6 +70,14 @@ const Navbar = () => {
                     <img src="/images/cart.svg" alt="Cart" />
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="nav-link"
+                    to="/Application/Frontend/src/pages/Dashboard/Product/ProductDashboard.jsx"
+                  >
+                    Dashboard
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

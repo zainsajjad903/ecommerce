@@ -11,6 +11,7 @@ import Checkout from "./pages/Checkout.jsx";
 import Thankyou from "./pages/Thankyou.jsx";
 import Footer from "./components/Footer.jsx";
 import Services from "./pages/Services.jsx";
+import ProductDashboard from "./pages/Dashboard/Product/ProductDashboard.jsx";
 
 const App = () => {
   return (
@@ -26,6 +27,10 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route
+          path="/Application/Frontend/src/pages/Dashboard/Product/ProductDashboard.jsx"
+          element={<ProductDashboard />}
+        />
       </Routes>
       <Footer />
     </Router>
