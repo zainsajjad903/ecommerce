@@ -1,21 +1,24 @@
 import { useState } from "react";
+import { createProduct } from "../Api/apiProduct";
+createProduct();
 const Productform = () => {
   let [value, updateValue] = useState({
     productName: "",
     productPrice: "",
   });
   function getProductName(event) {
-    updateValue({ ...value, productName: event.target.value });
+    updateValue({ ...value, [event.target.productName]: event.target.value });
   }
   function getProductPrice(event) {
-    updateValue({ ...value, productPrice: event.target.value });
+    updateValue({ ...value, [event.target.productPrice]: event.target.value });
   }
-  function handlesubmission() {
-    // event.preventDefault();
-    // useState({
-    //   productName: "",
-    //   productPrice: "",
-    // });
+  function handlesubmission(event) {
+    event.preventDefault();
+    createProduct(value);
+    updateValue({
+      productName: "",
+      productPrice: "",
+    });
   }
   return (
     <>
