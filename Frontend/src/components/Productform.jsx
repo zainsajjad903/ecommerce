@@ -7,10 +7,10 @@ const Productform = () => {
     productPrice: "",
   });
   function getProductName(event) {
-    updateValue({ ...value, [event.target.productName]: event.target.value });
+    updateValue({ ...value, productName: event.target.value });
   }
   function getProductPrice(event) {
-    updateValue({ ...value, [event.target.productPrice]: event.target.value });
+    updateValue({ ...value, productPrice: event.target.value });
   }
   function handlesubmission(event) {
     event.preventDefault();
