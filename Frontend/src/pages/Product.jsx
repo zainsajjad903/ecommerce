@@ -1,4 +1,18 @@
+import { useState, useEffect } from "react";
+import { getAllProducts } from "../Api/apiProduct.js";
+
 const Product = () => {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await getAllProducts();
+      if (response.success && response.data) {
+        setProducts(response.data);
+      }
+    };
+
+    fetchProducts();
+  }, []);
   return (
     <>
       <div className="hero">
@@ -14,7 +28,7 @@ const Product = () => {
         </div>
       </div>
 
-      <div className="untree_co-section product-section before-footer-section">
+      {/* <div className="untree_co-section product-section before-footer-section">
         <div className="container">
           <div className="row">
             <div className="col-12 col-md-4 col-lg-3 mb-5">
@@ -138,6 +152,19 @@ const Product = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="row">
+        {products?.map((item) => (
+          <div className="col-12 col-md-4 col-lg-3 mb-5" key={item._id}>
+            <a className="product-item" href="#">
+              <h3 className="product-title">{item.Productname}</h3>
+              <strong className="product-price">${item.Productprice}</strong>
+              <span className="icon-cross">
+                <img src="/images/cross.svg" className="img-fluid" />
+              </span>
+            </a>
+          </div>
+        ))}
       </div>
     </>
   );
