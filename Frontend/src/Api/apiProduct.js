@@ -66,3 +66,54 @@ const getSingleProduct = async (id) => {
   }
 };
 export { getSingleProduct };
+//update product
+const updateProduct = async (id, Data) => {
+  try {
+    const response = await fetch(`/api/products/updateProduct/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(Data),
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      console.error(
+        "Error updating product:",
+        result.message || "Unknown error",
+      );
+      return result;
+    }
+
+    console.log("Product updated successfully:", result);
+    return result;
+  } catch (error) {
+    console.error("Network or parsing error:", error);
+    throw error;
+  }
+};
+export { updateProduct };
+//delete product
+const deleteProduct = async (id) => {
+  try {
+    const response = await fetch(`/api/products/deleteProduct/${id}`, {
+      method: "DELETE",
+    });
+    const result = await response.json();
+    if (!response.ok) {
+      console.error(
+        "Error deleting product:",
+        result.message || "Unknown error",
+      );
+      return result;
+    }
+    console.log("Product deleted successfully:", result);
+    return result;
+  } catch (error) {
+    console.error("Network or parsing error:", error);
+    throw error;
+  }
+};
+export { deleteProduct };
