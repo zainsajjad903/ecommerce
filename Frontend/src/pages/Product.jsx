@@ -1,6 +1,4 @@
-import { getAllProducts } from "../Api/apiProduct";
 const Product = () => {
-  const { products } = getAllProducts();
   return (
     <>
       <div className="hero">
